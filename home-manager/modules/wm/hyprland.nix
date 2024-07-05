@@ -16,8 +16,13 @@
 
             #Env variables
             env = [
-                "XCURSOR_SIZE,30"
-                "HYPRCURSOR_SIZE,30"
+                "XDG_CURRENT_DESKTOP,Hyprland"
+                "XDG_SESSION_TYPE,wayland"
+                "XDG_SESSION_DESKTOP,Hyprland"
+                "env = QT_QPA_PLATFORM,wayland"
+                "GTK_THEME,Nord"
+                "XCURSOR_SIZE,32"
+                "MOZ_ENABLE_WAYLAND,1"
             ];
 
             #Input
