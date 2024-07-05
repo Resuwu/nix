@@ -1,7 +1,7 @@
 {
     imports = [
+        ./default.nix
         ./bootloader.nix
-        ./gc.nix
         ./hyprland.nix
         ./nm.nix
         ./sound.nix
