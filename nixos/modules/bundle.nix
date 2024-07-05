@@ -9,5 +9,6 @@
         ./tty.nix
         ./user.nix
         ./systemd/disable-turbo-boost.nix
+        ./systemd/enable-dark-mode.nix
     ];
 }
