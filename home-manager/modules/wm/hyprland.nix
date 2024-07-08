@@ -48,7 +48,7 @@
             };
 
             master = {
-                new_status = master;
+                new_status = "master";
             };
 
             #Cursor
