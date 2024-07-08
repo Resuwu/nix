@@ -8,13 +8,13 @@
             };
 
             colors = {
-                border = "dbb800f2";
+                border = "a3be8cf2";
                 background = "1f2226f2";
                 text = "ebcb8bff";
-                match = "8fbcbbff";
+                match = "81a1c1ff";
                 selection = "4c566af2";
                 selection-text = "eceff4ff";
-                selection-match = "81a1c1ff";
+                selection-match = "8fbcbbff";
             };
 
             border = {
