@@ -19,7 +19,7 @@
 
         hyprland
         xdg-desktop-portal-hyprland
-	fuzzel
+	    fuzzel
         swww
         waybar
         networkmanagerapplet

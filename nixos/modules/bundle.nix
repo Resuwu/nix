@@ -1,5 +1,4 @@
-{
-    imports = [
+{ imports = [
         ./default.nix
         ./bootloader.nix
         ./hyprland.nix
