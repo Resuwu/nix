@@ -37,10 +37,30 @@
                 };
             };
 
+            #Appearance
+            general = {
+                layout = "dwindle";
+            };
+
+            dwindle = {
+                pseudotile = true; # Master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
+                preserve_split = true; # You probably want this
+            };
+
+            master = {
+                new_status = master;
+            };
+
+            #Cursor
+            cursor = {
+                hide_on_key_press = true;
+                warp_on_change_workspace = true;
+            };
+
             #Gestures
             gestures = {
                 workspace_swipe = true;
-                workspace_swipe_distance = 200;
+                workspace_swipe_distance = 160;
                 workspace_swipe_forever = true;
             };
 
