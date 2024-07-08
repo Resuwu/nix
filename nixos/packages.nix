@@ -7,19 +7,20 @@
         firefox
         telegram-desktop
         alacritty
-        rofi
         obsidian
 
         neofetch
         tree
         git
-        swww
         openssl
+        htop
 
         xwayland
 
         hyprland
         xdg-desktop-portal-hyprland
+        rofi
+        swww
         waybar
         networkmanagerapplet
 
@@ -29,5 +30,9 @@
         home-manager
     ];
 
-    fonts.packages = with pkgs; [ jetbrains-mono ];
+    fonts.packages = with pkgs; [
+        jetbrains-mono
+        powerline-fonts
+        powerline-symbols
+    ];
 }

@@ -8,8 +8,6 @@
             set theme_display_user yes
             set theme_newline_cursor yes
             set theme_newline_prompt " > "
-            set theme_powerline_fonts no
-            set theme_nerd_fonts yes
         '';
 
         plugins = [

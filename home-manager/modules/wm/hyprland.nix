@@ -19,8 +19,7 @@
                 "XDG_CURRENT_DESKTOP,Hyprland"
                 "XDG_SESSION_TYPE,wayland"
                 "XDG_SESSION_DESKTOP,Hyprland"
-                "env = QT_QPA_PLATFORM,wayland"
-                "GTK_THEME,Nord"
+                "QT_QPA_PLATFORM,wayland"
                 "XCURSOR_SIZE,32"
                 "MOZ_ENABLE_WAYLAND,1"
             ];
@@ -45,23 +44,40 @@
                 workspace_swipe_forever = true;
             };
 
+            #Programs
+            "$terminal = alacritty"
+            "$menu = rofi --show drun -show-icons"
+            # "$fileManager = dolphin"
+
             #Binds
             "$mainMod" = "SUPER";
             bind = [
                 "$mainMod, Q, exec, $terminal"
                 "$mainMod, C, killactive,"
                 "$mainMod, M, exit,"
-                "$mainMod, E, exec, dolphin"
                 "$mainMod, V, togglefloating,"
-                "$mainMod, R, exec, rofi -show drun -show-icons"
+                "$mainMod, R, exec, $menu"
                 "$mainMod, P, pseudo, # dwindle"
                 "$mainMod, J, togglesplit, # dwindle"
+                # "$mainMod, E, exec, $fileManager"
 
                 # Move focus with mainMod + arrow keys
                 "$mainMod, left, movefocus, l"
                 "$mainMod, right, movefocus, r"
                 "$mainMod, up, movefocus, u"
                 "$mainMod, down, movefocus, d"
+
+                # Moving windows
+                "$mainMod SHIFT, left,  swapwindow, l"
+                "$mainMod SHIFT, right, swapwindow, r"
+                "$mainMod SHIFT, up,    swapwindow, u"
+                "$mainMod SHIFT, down,  swapwindow, d"
+
+                # Window resizing                     X  Y
+                "$mainMod CTRL, left,  resizeactive, -60 0"
+                "$mainMod CTRL, right, resizeactive,  60 0"
+                "$mainMod CTRL, up,    resizeactive,  0 -60"
+                "$mainMod CTRL, down,  resizeactive,  0  60"
 
                 # Switch workspaces with mainMod + [0-9]
                 "$mainMod, 1, workspace, 1"
@@ -86,10 +102,6 @@
                 "$mainMod SHIFT, 8, movetoworkspace, 8"
                 "$mainMod SHIFT, 9, movetoworkspace, 9"
                 "$mainMod SHIFT, 0, movetoworkspace, 10"
-
-                # Example special workspace (scratchpad)
-                "$mainMod, S, togglespecialworkspace, magic"
-                "$mainMod SHIFT, S, movetoworkspace, special:magic"
 
                 # Scroll through existing workspaces with mainMod + scroll
                 "$mainMod, mouse_down, workspace, e+1"
