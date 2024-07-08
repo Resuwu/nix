@@ -10,6 +10,8 @@
                     style = "SemiBold";
                 };
             };
+
+            colors.primary.background = "#1f2226";
         };
     };
 }
