@@ -1,5 +1,4 @@
-{
-    wayland.windowManager.hyprland = {
+{ wayland.windowManager.hyprland = {
         enable = true;
         xwayland.enable = true;
 
@@ -66,7 +65,7 @@
 
             #Programs
             "$terminal" = "alacritty";
-            "$menu" = "rofi -show drun -show-icons";
+            "$menu" = "fuzzel";
             # "$fileManager" = "dolphin";
 
             #Binds
