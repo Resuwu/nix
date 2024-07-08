@@ -19,7 +19,7 @@
                 "XDG_SESSION_TYPE,wayland"
                 "XDG_SESSION_DESKTOP,Hyprland"
                 "QT_QPA_PLATFORM,wayland"
-                "XCURSOR_SIZE,32"
+		"XCURSOR_SIZE,27"
                 "MOZ_ENABLE_WAYLAND,1"
             ];
 

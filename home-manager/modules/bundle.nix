@@ -1,5 +1,6 @@
 { imports = [
         ./alacritty.nix
+	./cursor.nix
         ./git.nix
         ./wm/hyprland.nix
         ./wm/waybar.nix
