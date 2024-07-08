@@ -65,9 +65,9 @@
             };
 
             #Programs
-            "$terminal = alacritty"
-            "$menu = rofi --show drun -show-icons"
-            # "$fileManager = dolphin"
+            "$terminal" = "alacritty";
+            "$menu" = "rofi --show drun -show-icons";
+            # "$fileManager" = "dolphin";
 
             #Binds
             "$mainMod" = "SUPER";
