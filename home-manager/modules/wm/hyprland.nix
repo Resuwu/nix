@@ -15,12 +15,13 @@
 
             #Env variables
             env = [
+		"GDK_BACKEND,wayland,x11"
                 "XDG_CURRENT_DESKTOP,Hyprland"
                 "XDG_SESSION_TYPE,wayland"
                 "XDG_SESSION_DESKTOP,Hyprland"
                 "QT_QPA_PLATFORM,wayland"
-		"XCURSOR_SIZE,27"
-                "MOZ_ENABLE_WAYLAND,1"
+		"QT_WAYLAND_DISABLE_DECORATION,1"
+		"MOZ_ENABLE_WAYLAND,1"
             ];
 
             #Input
@@ -60,6 +61,7 @@
             cursor = {
                 hide_on_key_press = true;
                 warp_on_change_workspace = true;
+		
             };
 
             #Gestures
