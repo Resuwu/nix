@@ -10,6 +10,19 @@
             set theme_newline_prompt " > "
         '';
 
+	shellAliases = 
+	let
+	    flakeDir = "~/nix";
+	in  {
+	    rb = "sudo nixos-rebuild switch --flake ${flakeDir}";
+	    upd = "sudo nix flake update ${flakeDir}";
+	    upg = "sudo nixos-rebuild switch --upgrade --flake ${flakeDir}";
+	    hms = "home-manager switch --flake ${flakeDir}";
+
+	    shut = "shutdown now";
+	    rboot = "sudo reboot now";
+	};
+
         plugins = [
             {
                 name = "fzf";
