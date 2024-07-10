@@ -1,9 +1,7 @@
 { pkgs, unstable, ... }: {
-    nixpkgs.config.allowUnfree = true;
-    nixpkgs-unstable.config.allowUnfree = true;
 
     environment.systemPackages =
-        (with pkgs-unstable; [
+        (with unstable; [
             firefox
             telegram-desktop
             obsidian
