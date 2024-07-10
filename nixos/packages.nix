@@ -8,6 +8,7 @@
         telegram-desktop
         alacritty
         obsidian
+	jetbrains.idea-community
 
         neofetch
         tree

@@ -27,6 +27,7 @@
             #Input
             input = {
                 kb_layout = "us,ru";
+		kb_options = "grp:alt_shift_toggle";
 
                 follow_mouse = 1;
 
@@ -63,6 +64,15 @@
                 warp_on_change_workspace = true;
 		
             };
+
+	    #Misc
+	    misc = {
+		disable_hyprland_logo = true;
+		animate_manual_resizes = true;
+		animate_mouse_windowdragging = true;
+		enable_swallow = true;
+		swallow_regex = "^(Alacritty)$";
+	    };
 
             #Gestures
             gestures = {
