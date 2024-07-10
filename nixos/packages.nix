@@ -1,35 +1,39 @@
-{ pkgs, ... }: {
-    nixpkgs.config = {
-        allowUnfree = true;
-    };
+{ pkgs, unstable, ... }: {
+    nixpkgs.config.allowUnfree = true;
+    nixpkgs-unstable.config.allowUnfree = true;
 
-    environment.systemPackages = with pkgs; [
-        firefox
-        telegram-desktop
-        alacritty
-        obsidian
-	jetbrains.idea-community
+    environment.systemPackages =
+        (with pkgs-unstable; [
+            firefox
+            telegram-desktop
+            obsidian
+            jetbrains.idea-community
+        ])
 
-        neofetch
-        tree
-        git
-        openssl
-        htop
+        ++
 
-        xwayland
+        (with pkgs; [
+            Alacritty
 
-        hyprland
-        xdg-desktop-portal-hyprland
-	    fuzzel
-        swww
-        waybar
-        networkmanagerapplet
+            neofetch
+            tree
+            git
+            openssl
+            htop
 
-        pipewire
-        pulseaudio
+            xwayland
+            hyprland
+            xdg-desktop-portal-hyprland
+            fuzzel
+            swww
+            waybar
+            networkmanagerapplet
 
-        home-manager
-    ];
+            pipewire
+            pulseaudio
+
+            home-manager
+        ]);
 
     fonts.packages = with pkgs; [
         jetbrains-mono
