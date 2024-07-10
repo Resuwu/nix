@@ -15,19 +15,19 @@
 
             #Env variables
             env = [
-		"GDK_BACKEND,wayland,x11"
+                "GDK_BACKEND,wayland,x11"
                 "XDG_CURRENT_DESKTOP,Hyprland"
                 "XDG_SESSION_TYPE,wayland"
                 "XDG_SESSION_DESKTOP,Hyprland"
                 "QT_QPA_PLATFORM,wayland"
-		"QT_WAYLAND_DISABLE_DECORATION,1"
-		"MOZ_ENABLE_WAYLAND,1"
+                "QT_WAYLAND_DISABLE_DECORATION,1"
+                "MOZ_ENABLE_WAYLAND,1"
             ];
 
             #Input
             input = {
                 kb_layout = "us,ru";
-		kb_options = "grp:alt_shift_toggle";
+                kb_options = "grp:alt_shift_toggle";
 
                 follow_mouse = 1;
 
@@ -62,17 +62,16 @@
             cursor = {
                 hide_on_key_press = true;
                 warp_on_change_workspace = true;
-		
             };
 
-	    #Misc
-	    misc = {
-		disable_hyprland_logo = true;
-		animate_manual_resizes = true;
-		animate_mouse_windowdragging = true;
-		enable_swallow = true;
-		swallow_regex = "^(Alacritty)$";
-	    };
+            #Misc
+            misc = {
+            disable_hyprland_logo = true;
+            animate_manual_resizes = true;
+            animate_mouse_windowdragging = true;
+            enable_swallow = true;
+            swallow_regex = "^(Alacritty)$";
+            };
 
             #Gestures
             gestures = {
