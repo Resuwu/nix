@@ -21,6 +21,8 @@
 
 	    shut = "shutdown now";
 	    rboot = "sudo reboot now";
+
+        ff = "fastfetch";
 	};
 
         plugins = [

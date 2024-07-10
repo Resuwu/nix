@@ -12,18 +12,19 @@
     };
 
     outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs:
-    let
-        system = "x86_64-linux";
-        lib = nixpkgs.lib;
-        pkgs = import nixpkgs {
-            inherit system;
-            config.allowUnfree = true;
-        };
-        unstable = import nixpkgs-unstable {
-            inherit system;
-            config.allowUnfree = true;
-        };
-    in {
+        let
+            system = "x86_64-linux";
+            lib = nixpkgs.lib;
+            pkgs = import nixpkgs {
+                inherit system;
+                config.allowUnfree = true;
+            };
+            unstable = import nixpkgs-unstable {
+                inherit system;
+                config.allowUnfree = true;
+            };
+
+        in {
         nixosConfigurations.resu-laptop = lib.nixosSystem {
             specialArgs = {
                 inherit inputs;

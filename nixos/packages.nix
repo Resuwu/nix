@@ -11,9 +11,9 @@
         ++
 
         (with pkgs; [
-            Alacritty
+            alacritty
 
-            neofetch
+            fastfetch
             tree
             git
             openssl
