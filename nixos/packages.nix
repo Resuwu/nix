@@ -3,7 +3,7 @@
     environment.systemPackages =
         (with unstable; [
             firefox
-            spotifyd
+            spotify-cli-linux
             anilibria-winmaclinux
 
             telegram-desktop
