@@ -21,13 +21,13 @@
                 "XDG_SESSION_DESKTOP,Hyprland"
                 "QT_QPA_PLATFORM,wayland;xcb"
                 "QT_WAYLAND_DISABLE_DECORATION,1"
-		"QT_ENABLE_HIGHDPI_SCALING,1"
+		        "QT_ENABLE_HIGHDPI_SCALING,1"
                 "MOZ_ENABLE_WAYLAND,1"
             ];
 
-	    windowrule = [
-		"tile, ^(pobfrontend)$"
-	    ];
+	        windowrule = [
+		        "tile, ^(pobfrontend)$"
+	        ];
 
             #Input
             input = {
@@ -71,11 +71,11 @@
 
             #Misc
             misc = {
-            disable_hyprland_logo = true;
-            animate_manual_resizes = true;
-            animate_mouse_windowdragging = true;
-            enable_swallow = true;
-            swallow_regex = "^(Alacritty)$";
+                disable_hyprland_logo = true;
+                animate_manual_resizes = true;
+                animate_mouse_windowdragging = true;
+                enable_swallow = true;
+                swallow_regex = "^(Alacritty)$";
             };
 
             #Gestures

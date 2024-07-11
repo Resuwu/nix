@@ -1,6 +1,7 @@
 { imports = [
-        ./default.nix
+        ./bluetooth.nix
         ./bootloader.nix
+        ./default.nix
         ./hyprland.nix
         ./nm.nix
         ./sound.nix

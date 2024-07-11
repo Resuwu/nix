@@ -3,23 +3,38 @@
     environment.systemPackages =
         (with unstable; [
             firefox
+            spotifyd
+            anilibria-winmaclinux
+
             telegram-desktop
+            webcord
+
             obsidian
             jetbrains.idea-community
+
             path-of-building
-            webcord
         ])
 
         ++
 
         (with pkgs; [
             alacritty
+            imv
 
-            fastfetch
+            file
             tree
+            zip
+            unzip
             git
+            cava
+            lux
+            fastfetch
             openssl
             htop
+
+            bluez
+            bluez-tools
+            bluez-alsa
 
             xwayland
             hyprland
