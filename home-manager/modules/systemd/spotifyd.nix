@@ -20,6 +20,4 @@ in {
             wantedBy = [ "default.target" ];
         };
     };
-
-    systemd.user.services.spotifyd.enable = true;
 }
