@@ -15,5 +15,5 @@ in {
         wantedBy = [ "default.target" ];
     };
 
-    systemd.services.spotifyd.enable = true;
+    systemd.user.services.spotifyd.enable = true;
 }
