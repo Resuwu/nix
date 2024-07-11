@@ -19,8 +19,8 @@
 	    upg = "sudo nixos-rebuild switch --upgrade --flake ${flakeDir}";
 	    hms = "home-manager switch --flake ${flakeDir}";
 
-	    shut = "shutdown now";
-	    rboot = "sudo reboot now";
+	    sht = "shutdown now";
+	    rbt = "sudo reboot now";
 
         ff = "fastfetch";
 	};

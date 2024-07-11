@@ -21,8 +21,13 @@
                 "XDG_SESSION_DESKTOP,Hyprland"
                 "QT_QPA_PLATFORM,wayland;xcb"
                 "QT_WAYLAND_DISABLE_DECORATION,1"
+		"QT_ENABLE_HIGHDPI_SCALING,1"
                 "MOZ_ENABLE_WAYLAND,1"
             ];
+
+	    windowrule = [
+		"tile, ^(pobfrontend)$"
+	    ];
 
             #Input
             input = {
