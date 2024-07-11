@@ -19,7 +19,7 @@
                 "XDG_CURRENT_DESKTOP,Hyprland"
                 "XDG_SESSION_TYPE,wayland"
                 "XDG_SESSION_DESKTOP,Hyprland"
-                "QT_QPA_PLATFORM,wayland"
+                "QT_QPA_PLATFORM,wayland;xcb"
                 "QT_WAYLAND_DISABLE_DECORATION,1"
                 "MOZ_ENABLE_WAYLAND,1"
             ];

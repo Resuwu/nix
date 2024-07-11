@@ -33,7 +33,6 @@
             pulseaudio
 
             home-manager
-            libsForQt5.qt5.qtwayland
         ]);
 
     fonts.packages = with pkgs; [
