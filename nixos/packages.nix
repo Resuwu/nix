@@ -6,6 +6,8 @@
             telegram-desktop
             obsidian
             jetbrains.idea-community
+            path-of-building
+            webcord
         ])
 
         ++
