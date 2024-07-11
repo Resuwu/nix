@@ -17,7 +17,7 @@ in {
         };
 
         Install = {
-            wantedBy = [ "default.target" ];
+            WantedBy = [ "default.target" ];
         };
     };
 }
