@@ -5,7 +5,7 @@
             firefox
             anilibria-winmaclinux
 
-            spotifyd
+            spotify
             spotify-cli-linux
 
             telegram-desktop

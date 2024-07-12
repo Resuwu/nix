@@ -5,6 +5,5 @@
         ./wm/hyprland.nix
         ./wm/waybar.nix
         ./wm/fuzzel.nix
-        ./systemd/spotifyd.nix
     ];
 }
