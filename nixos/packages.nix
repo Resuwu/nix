@@ -52,11 +52,13 @@
             pulseaudio
 
             home-manager
+	    wireguard-tools
         ]);
 
     fonts.packages = with pkgs; [
-        jetbrains-mono
+	jetbrains-mono
         powerline-fonts
         powerline-symbols
+	(nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
     ];
 }

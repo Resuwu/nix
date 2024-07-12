@@ -6,7 +6,7 @@
                 position = "top";
                 margin = "9 13 -10 18";
 
-                modules-left = [ "custom/launcher" "hyprland/workspaces" "hyprland/language" "keyboard-state" "cava" "custom/spotify" "pulseaudio" ];
+                modules-left = [ "custom/launcher" "hyprland/workspaces" "hyprland/language" "keyboard-state" "custom/spotify" "pulseaudio" ];
                 modules-center = [ "hyprland/window"  "privacy" ];
                 modules-right = [ "bluetooth" "network" "backlight" "battery" "clock" "tray" "group/group-power" ];
 
@@ -25,19 +25,10 @@
 
                 "keyboard-state" = {
                     capslock = true;
-                    format = "{icon} ";
+                    format = "{icon}";
                     format-icons = {
                         locked = "󰘲";
                     };
-                };
-
-                "cava" = {
-                    sensitivity = 80;
-                    hide_on_silence = true;
-                    method = "pipewire";
-                    monstercat = true;
-                    waves = true;
-                    noise_reduction = 0.85;
                 };
                 
                 "custom/spotify" = {
@@ -52,7 +43,7 @@
                     on-scroll-up = "playerctl -p spotify next";
                     on-scroll-down = "playerctl -p spotify previous";
                     exec = "$HOME/nix/home-manager/modules/wm/mediaplayer.py 2> /dev/null";
-                    exec-if = "pgrep spotify"
+                    exec-if = "pgrep spotify";
                 };
 
                 "pulseaudio" = {
