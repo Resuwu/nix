@@ -6,7 +6,6 @@
             anilibria-winmaclinux
 
             spotify
-            spotify-cli-linux
 
             telegram-desktop
             webcord
@@ -34,6 +33,8 @@
             openssl
             htop
 
+            python3
+
             bluez
             bluez-tools
             bluez-alsa
@@ -45,6 +46,7 @@
             swww
             waybar
             networkmanagerapplet
+            playerctl
 
             pipewire
             pulseaudio
