@@ -148,8 +148,7 @@
         }
 
         #workspaces {
-            margin: 3px;
-            margin-right: 0px;
+            margin: 3px 1px 3px 3px;
             background: transparent;
         }
 
@@ -186,8 +185,7 @@
             border-radius: 13px 0px 0px 4px;
             padding-left: 10px;
             padding-right: 8px;
-            margin: 4px;
-            margin-right: 0px;
+            margin: 4px 0px;
             background: rgba(163, 190, 140, 0.8);
             color: #d8dee9;
         }
@@ -195,10 +193,31 @@
         #keyboard-state {
             border-radius: 0px 4px 13px 0px;
             padding-right: 10px;
-            margin: 4px;
-            margin-left: 0px;
+            margin: 4px 0px;
             background: rgba(163, 190, 140, 0.8);
             color: #d8dee9;
+        }
+
+        #pulseaudio {
+            background: rgba(180, 142, 173, 0.8);
+            color: #d8dee9;
+            margin: 4px 2px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        #pulseaudio:hover {
+            background: rgba(180, 142, 173, 1);
+            color: #e5e9f0;
+        }
+
+        #pulseaudio.muted {
+            background: rgba(191, 97, 106, 0.8);
+        }
+
+        #pulseaudio.muted:hover {
+            background: rgba(191, 97, 106, 1);
+            color: #e5e9f0;
         }
         '';
     };
