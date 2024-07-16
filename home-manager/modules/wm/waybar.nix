@@ -13,14 +13,17 @@
                 "hyprland/language" = {
                     format-en = "EN";
                     format-ru = "RU";
+	                min-length = 5;
                 };
 
                 "keyboard-state" = {
                     capslock = true;
                     format = "{icon}";
                     format-icons = {
-                        locked = "󰘲";
+                        locked = " ";
+                        unlocked = "";
                     };
+                    min-length = 5;
                 };
 
                 "pulseaudio" = {
@@ -183,27 +186,27 @@
         #language {
             margin: 4px;
             background: rgba(235, 203, 139, 0.8);
-            color: #e5e9f0;
+            color: #d8dee9;
         }
 
         #language:hover {
             background: rgba(235, 203, 139, 1);
             box-shadow: inherit;
             text-shadow: inherit;
-            color: #d8dee9;
+            color: #4c566a;
         }
 
         #keyboard-state {
             margin: 4px;
             background: rgba(163, 190, 140, 0.8);
-            color: #e5e9f0;
+            color: #d8dee9;
         }
 
         #keyboard-state:hover {
             background: rgba(163, 190, 140, 1);
             box-shadow: inherit;
             text-shadow: inherit;
-            color: #d8dee9;
+            color: #4c566a;
         }
         '';
     };
