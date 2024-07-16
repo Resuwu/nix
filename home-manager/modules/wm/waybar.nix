@@ -11,8 +11,8 @@
                 modules-right = [ "bluetooth" "network" "backlight" "battery" "clock" "tray" "group/group-power" ];
 
                 "hyprland/language" = {
-                    format-en = "English";
-                    format-ru = "Russian";
+                    format-en = "EN";
+                    format-ru = "RU";
                 };
 
                 "keyboard-state" = {
@@ -139,7 +139,7 @@
             font-family: JetBrains Mono Semibold;
             font-size: 20px;
             min-height: 24px;
-            border-radius: 15px 5px;
+            border-radius: 13px 4px;
         }
 
         #waybar {
@@ -147,11 +147,12 @@
         }
 
         #workspaces {
-            margin: 4px;
+            margin: 3px;
             background: transparent;
         }
 
         #workspaces button {
+            margin: 1px;
             transition: all .5s ease-out;
             color: #5e81ac;
         }
@@ -177,6 +178,32 @@
 
         #workspaces button.urgent{
             color: #bf616a;
+        }
+
+        #language {
+            margin: 4px;
+            background: rgba(235, 203, 139, 0.8);
+            color: #e5e9f0;
+        }
+
+        #language:hover {
+            background: rgba(235, 203, 139, 1);
+            box-shadow: inherit;
+            text-shadow: inherit;
+            color: #d8dee9;
+        }
+
+        #keyboard-state {
+            margin: 4px;
+            background: rgba(163, 190, 140, 0.8);
+            color: #e5e9f0;
+        }
+
+        #keyboard-state:hover {
+            background: rgba(163, 190, 140, 1);
+            box-shadow: inherit;
+            text-shadow: inherit;
+            color: #d8dee9;
         }
         '';
     };
