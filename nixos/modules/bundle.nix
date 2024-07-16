@@ -1,9 +1,9 @@
 { imports = [
         ./bluetooth.nix
         ./bootloader.nix
-        ./default.nix
         ./hyprland.nix
         ./networking.nix
+        ./settings.nix
         ./sound.nix
         ./ssh.nix
         ./tty.nix

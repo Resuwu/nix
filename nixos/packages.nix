@@ -33,8 +33,6 @@
             openssl
             htop
 
-            python3
-
             bluez
             bluez-tools
             bluez-alsa
