@@ -41,7 +41,7 @@
                         car = "";
                         default = ["" "" ""];
                     };
-                    min-length = 13;
+                    on-click = "pamixer -t";
                 };
 
                 "hyprland/window" = {
@@ -159,14 +159,14 @@
         }
 
         #workspaces button:hover {
-            background: rgba(94, 129, 172, 0.8);
+            background: rgba(94, 129, 172, 0.4);
             color: #d8dee9;
             box-shadow: inherit;
             text-shadow: inherit;
         }
 
         #workspaces button.active {
-            background: rgba(208, 135, 112, 0.8);
+            background: rgba(208, 135, 112, 0.4);
             color: #e5e9f0;
         }
 
@@ -186,7 +186,7 @@
             padding-left: 10px;
             padding-right: 8px;
             margin: 4px 0px;
-            background: rgba(163, 190, 140, 0.8);
+            background: rgba(163, 190, 140, 0.4);
             color: #d8dee9;
         }
 
@@ -194,12 +194,12 @@
             border-radius: 0px 4px 13px 0px;
             padding-right: 10px;
             margin: 4px 0px;
-            background: rgba(163, 190, 140, 0.8);
+            background: rgba(163, 190, 140, 0.4);
             color: #d8dee9;
         }
 
         #pulseaudio {
-            background: rgba(180, 142, 173, 0.8);
+            background: rgba(180, 142, 173, 0.4);
             color: #d8dee9;
             margin: 4px 2px;
             padding-left: 10px;
@@ -212,7 +212,7 @@
         }
 
         #pulseaudio.muted {
-            background: rgba(191, 97, 106, 0.8);
+            background: rgba(191, 97, 106, 0.4);
         }
 
         #pulseaudio.muted:hover {
