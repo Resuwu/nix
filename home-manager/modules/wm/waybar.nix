@@ -137,5 +137,17 @@
                 };
             };
         };
+        style = ''
+        * {
+            border: none;
+            font-family: JetBrains Mono;
+            font-weight: semibold;
+            min-height: 20px;
+        }
+
+        window#waybar {
+            background: transparent;
+        }
+        '';
     };
 }
