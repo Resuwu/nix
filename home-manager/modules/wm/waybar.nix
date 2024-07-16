@@ -149,6 +149,7 @@
 
         #workspaces {
             margin: 3px;
+            margin-right: 0px;
             background: transparent;
         }
 
@@ -184,6 +185,7 @@
         #language {
             border-radius: 13px 0px 0px 4px;
             padding-left: 10px;
+            padding-right: 8px;
             margin: 4px;
             margin-right: 0px;
             background: rgba(163, 190, 140, 0.8);
