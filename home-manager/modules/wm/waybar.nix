@@ -190,25 +190,22 @@
         }
 
         #language {
-            border-radius: 13px 0px 0px 4px;
-            padding-left: 10px;
             padding-right: 8px;
-            margin: 4px 0px;
-            background: rgba(163, 190, 140, 0.5);
-            color: #d8dee9;
         }
 
-        #group/keyboard:hover {
-            background: rgba(163, 190, 140, 1);
-            color: #e5e9f0;
-        }
-
-        #keyboard-state {
-            border-radius: 0px 4px 13px 0px;
+        #keyboard {
+            padding-left: 10px;
             padding-right: 10px;
             margin: 4px 0px;
             background: rgba(163, 190, 140, 0.5);
             color: #d8dee9;
+        }
+
+        #keyboard:hover {
+            background: rgba(163, 190, 140, 1);
+            color: #e5e9f0;
+            box-shadow: inherit;
+            text-shadow: inherit;
         }
 
         #pulseaudio {
