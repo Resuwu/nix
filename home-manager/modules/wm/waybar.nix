@@ -6,13 +6,9 @@
                 position = "top";
                 margin = "9 13 -10 18";
 
-                modules-left = [ "custom/launcher" "hyprland/workspaces" "hyprland/language" "keyboard-state" "pulseaudio" ];
+                modules-left = [ "hyprland/workspaces" "hyprland/language" "keyboard-state" "pulseaudio" ];
                 modules-center = [ "hyprland/window"  "privacy" ];
                 modules-right = [ "bluetooth" "network" "backlight" "battery" "clock" "tray" "group/group-power" ];
-
-                "custom/launcher" = {
-
-                };
 
                 "hyprland/language" = {
                     format-en = "English";
@@ -140,13 +136,48 @@
         style = ''
         * {
             border: none;
-            font-family: JetBrains Mono;
-            font-weight: semibold;
+            font-family: JetBrains Mono Semibold;
+            font-size: 16px;
             min-height: 20px;
         }
 
         window#waybar {
             background: transparent;
+        }
+
+        #workspaces {
+            margin-right: 8px;
+            border-radius: 10px;
+            transition: none;
+            background: #383c4a;
+        }
+        
+        #workspaces button {
+            transition: none;
+            color: #7c818c;
+            background: transparent;
+            padding: 5px;
+            font-size: 18px;
+        }
+        
+        #workspaces button.persistent {
+            color: #7c818c;
+            font-size: 12px;
+        }
+        
+        #workspaces button:hover {
+            transition: none;
+            box-shadow: inherit;
+            text-shadow: inherit;
+            border-radius: inherit;
+            color: #383c4a;
+            background: #7c818c;
+        }
+        
+        #workspaces button.active {
+            background: #4e5263;
+            color: white;
+            border-radius: inherit;
         }
         '';
     };
