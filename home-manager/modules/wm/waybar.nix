@@ -183,8 +183,8 @@
 
         #language {
             border-radius: 13px 0px 0px 4px;
-            padding-left: 3px;
-            margin: 2px;
+            padding-left: 10px;
+            margin: 4px;
             margin-right: 0px;
             background: rgba(163, 190, 140, 0.8);
             color: #d8dee9;
@@ -192,8 +192,8 @@
 
         #keyboard-state {
             border-radius: 0px 4px 13px 0px;
-            padding-right: 3px;
-            margin: 2px;
+            padding-right: 10px;
+            margin: 4px;
             margin-left: 0px;
             background: rgba(163, 190, 140, 0.8);
             color: #d8dee9;
