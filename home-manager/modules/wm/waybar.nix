@@ -14,13 +14,9 @@
 
                 };
 
-                "hyprland/workspaces" = {
-
-                };
-
                 "hyprland/language" = {
-                    format-en = "EN";
-                    format-ru = "RU";
+                    format-en = "English";
+                    format-ru = "Russian";
                 };
 
                 "keyboard-state" = {
@@ -48,12 +44,14 @@
                         car = "";
                         default = ["" "" ""];
                     };
-                    on-click = "pavucontrol";
                     min-length = 13;
                 };
 
                 "hyprland/window" = {
-
+                    format = "{class}: {}";
+                    rewrite = {
+                        "(.*) — Mozilla Firefox" = "$1";
+                    };
                 };
 
                 "privacy" = {
@@ -73,19 +71,39 @@
                 };
 
                 "network" = {
-                    
+                    interface = "wlp2s0";
+                    format = "{ifname}";
+                    format-wifi = "{essid} ({signalStrength}%) ";
+                    format-ethernet = "{ipaddr}/{cidr} 󰊗";
+                    format-disconnected = "";
+                    tooltip-format = "{ifname} via {gwaddr} 󰊗";
+                    tooltip-format-wifi = "{essid} ({signalStrength}%) ";
+                    tooltip-format-ethernet = "{ifname} ";
+                    tooltip-format-disconnected = "Disconnected";
+                    max-length = 50;
                 };
 
                 "backlight" = {
-
+                    device = "intel_backlight";
+                    format = "{percent}% {icon}";
+                    format-icons = [ "" "" ];
                 };
 
                 "battery" = {
-
+                    states = {
+                        warning = 30;
+                        critical = 15;
+                    };
+                    format = "{capacity}% {icon}";
+                    format-charging = "{capacity}% ";
+                    format-plugged = "{capacity}% ";
+                    format-alt = "{time} {icon}";
+                    format-icons = [ "" "" "" "" "" ];
+                    max-length = 25;
                 };
 
                 "clock" = {
-
+                    format = "{:%H:%M}";
                 };
 
                 "tray" = {
@@ -94,7 +112,28 @@
                 };
 
                 "group/group-power" = {
+                    orientation = "inherit";
+                    drawer = {
+                        transition-duration = 500;
+                        children-class = "not-power";
+                        transition-left-to-right = false;
+                    };
+                    modules = [
+                        custom/power
+                        custom/reboot
+                    ];
+                };
 
+                "custom/reboot" = {
+                    format = "󰜉";
+                    tooltip = false;
+                    on-click = "reboot";
+                };
+
+                "custom/power" = {
+                    format = "";
+                    tooltip = false;
+                    on-click = "shutdown now";
                 };
             };
         };

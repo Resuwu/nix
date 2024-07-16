@@ -48,6 +48,7 @@
 
             pipewire
             pulseaudio
+            pamixer
 
             home-manager
 	    wireguard-tools
