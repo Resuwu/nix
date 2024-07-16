@@ -119,8 +119,8 @@
                         transition-left-to-right = false;
                     };
                     modules = [
-                        custom/power
-                        custom/reboot
+                        "custom/power"
+                        "custom/reboot"
                     ];
                 };
 
