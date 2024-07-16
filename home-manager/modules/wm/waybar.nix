@@ -6,9 +6,17 @@
                 position = "top";
                 margin = "9 13 -10 18";
 
-                modules-left = [ "hyprland/workspaces" "hyprland/language" "keyboard-state" "pulseaudio" ];
+                modules-left = [ "hyprland/workspaces" "group/keyboard" "pulseaudio" ];
                 modules-center = [ "hyprland/window"  "privacy" ];
                 modules-right = [ "bluetooth" "network" "backlight" "battery" "clock" "tray" "group/group-power" ];
+
+                "group/keyboard" = {
+                    orientation = "inherit";
+                    modules = [
+                        "hyprland/language"
+                        "keyboard-state"
+                    ];
+                };
 
                 "hyprland/language" = {
                     format-en = "EN";
@@ -144,7 +152,7 @@
         }
 
         #waybar {
-            background-color: rgba(10, 10, 10, 0.4);
+            background-color: rgba(10, 10, 10, 0.5);
         }
 
         #workspaces {
@@ -159,14 +167,14 @@
         }
 
         #workspaces button:hover {
-            background: rgba(94, 129, 172, 0.4);
+            background: rgba(94, 129, 172, 0.5);
             color: #d8dee9;
             box-shadow: inherit;
             text-shadow: inherit;
         }
 
         #workspaces button.active {
-            background: rgba(208, 135, 112, 0.4);
+            background: rgba(208, 135, 112, 0.5);
             color: #e5e9f0;
         }
 
@@ -186,20 +194,25 @@
             padding-left: 10px;
             padding-right: 8px;
             margin: 4px 0px;
-            background: rgba(163, 190, 140, 0.4);
+            background: rgba(163, 190, 140, 0.5);
             color: #d8dee9;
+        }
+
+        #group/keyboard:hover {
+            background: rgba(163, 190, 140, 1);
+            color: #e5e9f0;
         }
 
         #keyboard-state {
             border-radius: 0px 4px 13px 0px;
             padding-right: 10px;
             margin: 4px 0px;
-            background: rgba(163, 190, 140, 0.4);
+            background: rgba(163, 190, 140, 0.5);
             color: #d8dee9;
         }
 
         #pulseaudio {
-            background: rgba(180, 142, 173, 0.4);
+            background: rgba(180, 142, 173, 0.5);
             color: #d8dee9;
             margin: 4px 2px;
             padding-left: 10px;
@@ -212,7 +225,7 @@
         }
 
         #pulseaudio.muted {
-            background: rgba(191, 97, 106, 0.4);
+            background: rgba(191, 97, 106, 0.5);
         }
 
         #pulseaudio.muted:hover {
