@@ -20,7 +20,6 @@
 	    hms = "home-manager switch --flake ${flakeDir}";
 
 	    sht = "shutdown now";
-	    reb = "sudo reboot now";
 
         cls = "clear";
         ff = "fastfetch";

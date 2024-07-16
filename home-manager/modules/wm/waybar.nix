@@ -194,6 +194,7 @@
         }
 
         #keyboard {
+            transition: all .5s ease-out;
             padding-left: 10px;
             padding-right: 10px;
             margin: 4px 0px;
@@ -209,6 +210,7 @@
         }
 
         #pulseaudio {
+            transition: all .5s ease-out;
             background: rgba(180, 142, 173, 0.5);
             color: #d8dee9;
             margin: 4px 2px;
