@@ -137,47 +137,37 @@
         * {
             border: none;
             font-family: JetBrains Mono Semibold;
-            font-size: 16px;
-            min-height: 20px;
+            font-size: 20px;
+            min-height: 24px;
+            border-radius: 0px;
         }
 
-        window#waybar {
-            background: transparent;
+        #waybar {
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
         }
 
         #workspaces {
-            margin-right: 8px;
-            border-radius: 10px;
-            transition: none;
-            background: #383c4a;
+            margin: 2px;
         }
-        
+
         #workspaces button {
-            transition: none;
-            color: #7c818c;
-            background: transparent;
-            padding: 5px;
-            font-size: 18px;
+            transition: all .5s ease-out;
+            color: #5e81ac;
         }
-        
-        #workspaces button.persistent {
-            color: #7c818c;
-            font-size: 12px;
-        }
-        
+
         #workspaces button:hover {
-            transition: none;
-            box-shadow: inherit;
-            text-shadow: inherit;
-            border-radius: inherit;
-            color: #383c4a;
-            background: #7c818c;
+            background-color: rgba(129, 161, 193, 0.8);
+            color: #d8dee9;
         }
-        
+
         #workspaces button.active {
-            background: #4e5263;
-            color: white;
-            border-radius: inherit;
+            background-color: rgba(208, 135, 112, 0.8);
+            color: #e5e9f0;
+        }
+
+        #workspaces button.urgent{
+            color: #bf616a;
         }
         '';
     };
