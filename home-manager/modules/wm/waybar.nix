@@ -139,16 +139,16 @@
             font-family: JetBrains Mono Semibold;
             font-size: 20px;
             min-height: 24px;
-            border-radius: 0px;
+            border-radius: 15px 5px;
         }
 
         #waybar {
-            background-color: rgba(0, 0, 0, 0.4);
-            border-radius: 10px;
+            background-color: rgba(10, 10, 10, 0.4);
         }
 
         #workspaces {
-            margin: 2px;
+            margin: 4px;
+            background: transparent;
         }
 
         #workspaces button {
@@ -157,13 +157,22 @@
         }
 
         #workspaces button:hover {
-            background-color: rgba(129, 161, 193, 0.8);
+            background: rgba(94, 129, 172, 0.8);
             color: #d8dee9;
+            box-shadow: inherit;
+            text-shadow: inherit;
         }
 
         #workspaces button.active {
-            background-color: rgba(208, 135, 112, 0.8);
+            background: rgba(208, 135, 112, 0.8);
             color: #e5e9f0;
+        }
+
+        #workspaces button.active:hover {
+            background: rgba(208, 135, 112, 1);
+            color: #eceff4;
+            box-shadow: inherit;
+            text-shadow: inherit;
         }
 
         #workspaces button.urgent{
