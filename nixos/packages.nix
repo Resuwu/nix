@@ -42,6 +42,7 @@
             xdg-desktop-portal-hyprland
             fuzzel
             swww
+            mako
             waybar
             networkmanagerapplet
             playerctl
@@ -56,7 +57,7 @@
             pamixer
 
             home-manager
-	    wireguard-tools
+	        wireguard-tools
         ]);
 
     fonts.packages = with pkgs; [
