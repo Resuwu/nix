@@ -3,6 +3,7 @@
         ./bootloader.nix
         ./hyprland.nix
         ./networking.nix
+        ./sddm.nix
         ./settings.nix
         ./sound.nix
         ./ssh.nix
