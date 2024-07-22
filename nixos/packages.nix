@@ -45,6 +45,11 @@
             waybar
             networkmanagerapplet
             playerctl
+            (catppuccin-sddm.override {
+                flavor = "mocha";
+                font = "JetBrains Mono Semibold";
+                fontSize = "13";
+            })
 
             pipewire
             pulseaudio

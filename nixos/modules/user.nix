@@ -10,6 +10,4 @@
             packages = with pkgs; [];
         };
     };
-
-    services.getty.autologinUser = "resu";
 }
