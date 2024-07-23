@@ -26,7 +26,7 @@
                 config.allowUnfree = true;
             };
 
-            pobfrontend = import (./custom-pkgs/pobfrontend/default.nix) {
+            custom = import (./custom-pkgs) {
                 inherit system;
             };
 
@@ -36,6 +36,7 @@
                 inherit inputs;
                 inherit system;
                 inherit unstable;
+                inherit custom;
             };
             modules = [ ./nixos/configuration.nix ];
         };

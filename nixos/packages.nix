@@ -1,4 +1,4 @@
-{ pkgs, unstable, ... }: {
+{ pkgs, unstable, custom, ... }: {
 
     environment.systemPackages =
     (with unstable; [
@@ -9,7 +9,13 @@
         webcord
         obsidian
         jetbrains.idea-community
-        path-of-building
+#        path-of-building
+    ])
+
+    ++
+
+    (with custom; [
+        pobfrontend
     ])
 
     ++
