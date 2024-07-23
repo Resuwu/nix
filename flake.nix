@@ -32,7 +32,6 @@
                 inherit inputs;
                 inherit system;
                 inherit unstable;
-                inherit custom;
             };
             modules = [ ./nixos/configuration.nix ];
         };

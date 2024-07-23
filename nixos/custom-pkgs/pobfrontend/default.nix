@@ -29,18 +29,10 @@ let
     nativeBuildInputs = [ unzip ];
 
     buildCommand = ''
-      # I have absolutely no idea how this file is generated
-      # and I don't think I want to know. The Flatpak also does this.
       unzip -j -d $out $src/runtime-win32.zip lua/sha1.lua
-
-      # Install the actual data
       cp -r $src/src $src/runtime/lua/*.lua $src/manifest.xml $out
-
-      # Pretend this is an official build so we don't get the ugly "dev mode" warning
       substituteInPlace $out/manifest.xml --replace '<Version' '<Version platform="nixos"'
       touch $out/installed.cfg
-
-      # Completely stub out the update check
       chmod +w $out/src/UpdateCheck.lua
       echo 'return "none"' > $out/src/UpdateCheck.lua
     '';
@@ -126,6 +118,6 @@ stdenv.mkDerivation {
     license = lib.licenses.mit;
     maintainers = [ lib.maintainers.k900 ];
     mainProgram = "pobfrontend";
-    broken = stdenv.isDarwin; # doesn't find uic6 for some reason
+    broken = stdenv.isDarwin;
   };
 }
