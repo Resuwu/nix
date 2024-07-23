@@ -9,13 +9,7 @@
         webcord
         obsidian
         jetbrains.idea-community
-#        path-of-building
-    ])
-
-    ++
-
-    (with custom; [
-        pobfrontend
+        ( import ./custom-pkgs/pobfrontend/default.nix )
     ])
 
     ++

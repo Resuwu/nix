@@ -26,10 +26,6 @@
                 config.allowUnfree = true;
             };
 
-            custom = import (./custom-pkgs) {
-                inherit system;
-            };
-
         in {
         nixosConfigurations.resu-laptop = lib.nixosSystem {
             specialArgs = {
