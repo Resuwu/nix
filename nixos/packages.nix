@@ -51,11 +51,5 @@
 
         home-manager
 	    wireguard-tools
-        
-        (catppuccin-sddm.override {
-            flavor = "mocha";
-            font = "JetBrains Mono Semibold";
-            fontSize = "13";
-        })
     ]);
 }

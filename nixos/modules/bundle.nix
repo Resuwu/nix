@@ -9,7 +9,6 @@
         ./sddm.nix
         ./sound.nix
         ./ssh.nix
-        ./tty.nix
         ./user.nix
     ];
 }
