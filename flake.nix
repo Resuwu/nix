@@ -26,6 +26,10 @@
                 config.allowUnfree = true;
             };
 
+            pobfrontend = import (./custom-pkgs/pobfrontend/default.nix) {
+                inherit system;
+            };
+
         in {
         nixosConfigurations.resu-laptop = lib.nixosSystem {
             specialArgs = {
