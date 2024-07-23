@@ -1,9 +1,9 @@
 { imports = [
-        ./alacritty.nix
-	./cursor.nix
-        ./git.nix
+        ./wm/fuzzel.nix
         ./wm/hyprland.nix
         ./wm/waybar.nix
-        ./wm/fuzzel.nix
+        ./alacritty.nix
+        ./git.nix
+	./theme.nix
     ];
 }
