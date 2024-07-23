@@ -13,8 +13,8 @@
 	
     home = {
 		pointerCursor = {
-		    package = pkgs.catppuccin-cursors.mochaGreen;
-		    name = "Catppuccin-Mocha-Green";
+		    package = pkgs.bibata-cursors;
+		    name = "Bibata-Modern-Classic";
 
 		    size = 24;
 			
