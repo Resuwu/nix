@@ -4,6 +4,7 @@
             experimental-features = [ "nix-command" "flakes" ];
             warn-dirty = false;
         };
+        optimise.automatic = true;
         gc = {
             automatic = true;
             dates = "weekly";

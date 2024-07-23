@@ -1,14 +1,15 @@
 { imports = [
+        ./systemd/disable-turbo-boost.nix
         ./bluetooth.nix
         ./bootloader.nix
         ./hyprland.nix
         ./networking.nix
+        ./nix-settings.nix
+        ./printing.nix
         ./sddm.nix
-        ./settings.nix
         ./sound.nix
         ./ssh.nix
         ./tty.nix
         ./user.nix
-        ./systemd/disable-turbo-boost.nix
     ];
 }

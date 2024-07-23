@@ -2,6 +2,7 @@
     imports = [
         ./hardware-configuration.nix
         ./packages.nix
+        ./fonts.nix
         ./modules/bundle.nix
     ];
 
