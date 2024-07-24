@@ -2,7 +2,13 @@
         enable = true;
         
         settings = {
-            window.opacity = 0.9;
+            window = {
+                opacity = 0.9;
+                padding = {
+                    x = 5;
+                    y = 5;
+                };
+            };
 
             font = {
                 size = 13.0;
