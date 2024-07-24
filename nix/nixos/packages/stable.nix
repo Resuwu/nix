@@ -16,6 +16,7 @@
         openssl
         htop
 	    wireguard-tools
+        brightnessctl
 
         #Bluetooth
         bluez
