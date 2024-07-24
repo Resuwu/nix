@@ -23,7 +23,7 @@ let
       owner = "PathOfBuildingCommunity";
       repo = "PathOfBuilding";
       rev = "v${finalAttrs.version}";
-      hash = "sha256-WxaE9QvpM+1Mp3K979HqQxDjO0QUBL4lzLaZwYdhtfc=";
+
     };
 
     nativeBuildInputs = [ unzip ];

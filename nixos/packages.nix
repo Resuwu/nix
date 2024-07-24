@@ -9,7 +9,7 @@
         webcord
         obsidian
         jetbrains.idea-community
-        ( import ./custom-pkgs/pobfrontend/default.nix )
+        ( qt6.callPackage ./custom-pkgs/pobfrontend/default.nix {} )
     ])
 
     ++
