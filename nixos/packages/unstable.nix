@@ -1,5 +1,4 @@
 { unstable, ... }: {
-
     environment.systemPackages = with unstable; [
         firefox
         anilibria-winmaclinux

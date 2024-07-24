@@ -1,9 +1,10 @@
 { pkgs, ... }: {
-
     environment.systemPackages = with pkgs; [
+        #Programs
         alacritty
-        imv
 
+        #Cli tools
+        imv
         file
         tree
         zip
@@ -14,30 +15,33 @@
         fastfetch
         openssl
         htop
+	    wireguard-tools
 
+        #Bluetooth
         bluez
         bluez-tools
         bluez-alsa
 
+        #Hypr
         hyprland
-        xdg-desktop-portal-hyprland
         hyprlock
         hypridle
-        xwayland
+        xdg-desktop-portal-hyprland
+
+        #Wm modules
         fuzzel
         swww
         mako
         waybar
         light
         swappy
-        wleave
+        xwayland
+        home-manager
 
+        #Audio
         playerctl
         pipewire
         pulseaudio
         pamixer
-
-        home-manager
-	    wireguard-tools
     ];
 }

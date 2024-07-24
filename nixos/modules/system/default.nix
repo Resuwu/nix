@@ -5,6 +5,7 @@
         ./localization.nix
         ./network.nix
         ./nix-settings.nix
+        ./security.nix
         ./sound.nix
         ./user.nix
     ];
