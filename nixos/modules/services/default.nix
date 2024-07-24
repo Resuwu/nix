@@ -1,4 +1,4 @@
-{ import = [
+{ imports = [
         ./systemd
         ./printing.nix
         ./sddm.nix
