@@ -1,6 +1,5 @@
 { imports = [
-    ./fish.nix
-    ./modules/bundle.nix
+    ./modules
   ];
   
   home = {

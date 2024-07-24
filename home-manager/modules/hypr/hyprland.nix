@@ -7,7 +7,7 @@
             monitor = ",1920x1080@60,auto,1";
 
             #Autostart
-            exec-once = "bash ~/nix/home-manager/modules/wm/start.sh";
+            exec-once = "bash ~/nix/home-manager/scripts/start.sh";
 
             decoration = {
                 rounding = 10;

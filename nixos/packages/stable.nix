@@ -1,20 +1,6 @@
-{ pkgs, unstable, custom, ... }: {
+{ pkgs, ... }: {
 
-    environment.systemPackages =
-    (with unstable; [
-        firefox
-        anilibria-winmaclinux
-        spotify
-        telegram-desktop
-        webcord
-        obsidian
-        jetbrains.idea-community
-        ( qt6.callPackage ./custom-pkgs/pobfrontend/default.nix {} )
-    ])
-
-    ++
-
-    (with pkgs; [
+    environment.systemPackages = with pkgs; [
         alacritty
         imv
 
@@ -53,5 +39,5 @@
 
         home-manager
 	    wireguard-tools
-    ]);
+    ];
 }
