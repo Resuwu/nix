@@ -42,7 +42,9 @@
         swww
         mako
         waybar
-        networkmanagerapplet
+        light
+        swappy
+        wleave
 
         playerctl
         pipewire
