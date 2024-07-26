@@ -4,6 +4,7 @@
         alacritty
 
         #Cli tools
+        vim
         imv
         file
         tree
