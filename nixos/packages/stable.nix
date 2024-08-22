@@ -18,6 +18,7 @@
         htop
 	    wireguard-tools
         brightnessctl
+        upower
 
         #Bluetooth
         bluez
