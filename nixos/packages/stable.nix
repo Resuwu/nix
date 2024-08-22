@@ -36,9 +36,13 @@
         mako
         waybar
         light
-        swappy
-        xwayland
+        flameshot
         home-manager
+
+        #Wayland
+        xwayland
+        wl-clipboard
+        cliphist
 
         #Audio
         playerctl

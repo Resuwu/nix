@@ -88,7 +88,6 @@
             #Programs
             "$terminal" = "alacritty";
             "$menu" = "fuzzel";
-            # "$fileManager" = "dolphin";
 
             #Binds
             "$mainMod" = "SUPER";
@@ -100,7 +99,10 @@
                 "$mainMod, R, exec, $menu"
                 "$mainMod, P, pseudo, # dwindle"
                 "$mainMod, J, togglesplit, # dwindle"
-                # "$mainMod, E, exec, $fileManager"
+
+                # Screenshooting
+                ", PRINT, exec, flameshot full --clipboard"
+                "ALT, PRINT, exec, flameshot gui --clipboard"
 
                 # Move focus with mainMod + arrow keys
                 "$mainMod, left, movefocus, l"

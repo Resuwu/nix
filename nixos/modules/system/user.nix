@@ -4,7 +4,7 @@
         
         users.resu = {
             isNormalUser = true;
-            extraGroups = [ "wheel" "input" ];
+            extraGroups = [ "wheel" "input" "vboxusers" ];
             packages = with pkgs; [];
         };
     };

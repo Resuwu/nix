@@ -8,5 +8,6 @@
         ./security.nix
         ./sound.nix
         ./user.nix
+        ./virtualisation.nix
     ];
 }
