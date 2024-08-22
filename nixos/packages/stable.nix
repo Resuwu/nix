@@ -45,8 +45,12 @@
         mako
         waybar
         light
-        flameshot
         home-manager
+
+        #Screenshots
+        grim
+        slurp
+        swappy
 
         #Wayland
         xwayland
