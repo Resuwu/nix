@@ -1,12 +1,5 @@
 { virtualisation = {
-        virtualbox = {
-            host.enable = true;
-            guest = {
-                enable = true;
-                draganddrop = true;
-                clipboard = true;
-            };
-        };
+        virtualbox.host.enable = true;
 
         docker = {
             enable = true;
