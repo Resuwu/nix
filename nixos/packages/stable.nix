@@ -2,6 +2,10 @@
     environment.systemPackages = with pkgs; [
         #Programs
         alacritty
+        mpv
+        gimp
+        bitwarden-desktop
+        filezilla
 
         #Cli tools
         vim
@@ -18,7 +22,11 @@
         htop
 	    wireguard-tools
         brightnessctl
-        upower
+
+        #Spellcheck
+        hunspell
+        hunspellDicts.en_US
+        hunspellDicts.ru_RU
 
         #Bluetooth
         bluez
