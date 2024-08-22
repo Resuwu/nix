@@ -42,6 +42,7 @@
         #Wm modules
         fuzzel
         swww
+        libnotify
         mako
         waybar
         light

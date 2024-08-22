@@ -101,9 +101,9 @@
                 "$mainMod, J, togglesplit, # dwindle"
 
                 # Screenshooting
-                ", PRINT, exec, grim - | wl-copy"
-                ''$mainMod SHIFT, S, exec, grim -g "$(slurp)" - | wl-copy''
-                ''$mainMod SHIFT, PRINT, exec, grim -g "$(slurp)" - | swappy -f - -o - | wl-copy''
+                '', PRINT, exec, grim - | wl-copy && notify-send -e "Screenshot saved to clipboard"''
+                ''$mainMod SHIFT, S, exec, grim -g "$(slurp)" - | wl-copy && notify-send -e "Screenshot saved to clipboard"''
+                ''$mainMod SHIFT, PRINT, exec, grim -g "$(slurp)" - | swappy -f - -o - | wl-copy && notify-send -e "Screenshot saved to clipboard"''
 
                 # Move focus with mainMod + arrow keys
                 "$mainMod, left, movefocus, l"
