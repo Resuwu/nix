@@ -1,7 +1,8 @@
 { imports = [
         ./systemd
+        ./blueman.nix
+        ./greetd.nix
         ./printing.nix
-        ./sddm.nix
         ./ssh.nix
         ./thermald.nix
         ./tlp.nix
