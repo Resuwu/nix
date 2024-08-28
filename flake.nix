@@ -31,6 +31,7 @@
             specialArgs = {
                 inherit inputs;
                 inherit system;
+                inherit pkgs;
                 inherit unstable;
             };
             modules = [ ./nixos/configuration.nix ];
