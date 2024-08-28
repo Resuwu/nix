@@ -144,6 +144,7 @@
             background: transparent;
             margin: 0px;
             transition: all .5s ease-out;
+            border-radius: 0px;
         }
 
         #waybar {
