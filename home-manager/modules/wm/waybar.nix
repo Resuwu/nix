@@ -140,27 +140,32 @@
             font-family: JetBrains Mono Semibold;
             font-size: 20px;
             min-height: 22px;
-            color: #dddddd;
+            color: #eeeeee;
             background: transparent;
-            margin: 0 0 3px 0;
+            margin: 0;
             transition: all .5s ease-out;
             border-radius: 0px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         #waybar {
             background-color: rgba(10, 10, 10, 0.5);
-            border-bottom: 3px solid rgba(255, 132, 0, 0.7);
+            border-bottom: 3px solid rgba(255, 132, 0, 1);
         }
 
-        #workspaces {}
+        #workspaces {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
 
         #workspaces button {
-            padding-left: 5px;
-            padding-right: 5px;
+            padding-left: 7px;
+            padding-right: 7px;
         }
 
         #workspaces button.active {
-            background: rgba(255, 132, 0, 0.7);
+            background: rgba(255, 132, 0, 1);
         }
 
         #workspaces button.urgent{
@@ -168,18 +173,12 @@
         }
 
         #language {
-            padding-left: 10px;
-            padding-right: 10px;
         }
 
         #keyboard-state {
-            padding-left: 10px;
-            padding-right: 10px;
         }
 
         #pulseaudio {
-            padding-left: 10px;
-            padding-right: 10px;
         }
 
         #pulseaudio.muted {
