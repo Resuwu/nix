@@ -145,6 +145,8 @@
             margin: 0;
             transition: all .5s ease-out;
             border-radius: 0px;
+            padding-left: 8px;
+            padding-right: 8px;
         }
 
         #waybar {
@@ -158,8 +160,8 @@
         }
 
         #workspaces button {
-            padding-left: 7px;
-            padding-right: 7px;
+            padding-left: 4px;
+            padding-right: 4px;
         }
 
         #workspaces button.active {
@@ -170,69 +172,37 @@
             color: #61c8ff;
         }
 
-        #language {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+        #language {}
 
-        #keyboard-state {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+        #keyboard-state {}
 
-        #pulseaudio {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+        #pulseaudio {}
 
         #pulseaudio.muted {
             color: #d93725;
         }
 
         #window {
-            padding-left: 10px;
-            padding-right: 5px;
+            padding-right: 4px;
         }
 
         #privacy {
-            padding-left: 5px;
-            padding-right: 10px;
+            padding-left: 4px;
         }
 
-        #bluetooth {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+        #bluetooth {}
 
-        #network {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+        #network {}
         
-        #backlight {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+        #backlight {}
         
-        #battery {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+        #battery {}
         
-        #clock {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+        #clock {}
         
-        #tray {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+        #tray {}
         
-        #group-power {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
+        #group-power {}
         '';
     };
 }
