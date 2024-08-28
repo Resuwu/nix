@@ -172,7 +172,9 @@
             color: #61c8ff;
         }
 
-        #hyprland/language {}
+        #language {
+            padding-left: 12px;
+        }
 
         #keyboard-state {}
 
@@ -182,7 +184,7 @@
             color: #d93725;
         }
 
-        #hyprland/window {
+        #window {
             padding-right: 4px;
         }
 
