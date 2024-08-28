@@ -154,8 +154,8 @@
         #workspaces {}
 
         #workspaces button {
-            padding-left: 1px;
-            padding-right: 1px;
+            padding-left: 5px;
+            padding-right: 5px;
         }
 
         #workspaces button.active {
@@ -167,18 +167,18 @@
         }
 
         #language {
-            padding-left: 5px;
-            padding-right: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         #keyboard-state {
-            padding-left: 5px;
-            padding-right: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         #pulseaudio {
-            padding-left: 5px;
-            padding-right: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         #pulseaudio.muted {
