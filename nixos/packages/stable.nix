@@ -6,6 +6,9 @@
         gimp
         bitwarden-desktop
         filezilla
+        mongodb-compass
+        pgadmin4
+        postman
 
         #Cli tools
         vim

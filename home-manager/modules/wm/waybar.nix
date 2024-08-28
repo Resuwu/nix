@@ -148,11 +148,20 @@
             font-family: JetBrains Mono Semibold;
             font-size: 20px;
             min-height: 24px;
-            border-radius: 13px 4px;
+            color: #111111;
+        }
+
+        *:hover {
+            background: rgba(255, 132, 0, 0.7);
+            color: #ffffff;
+            box-shadow: inherit;
+            text-shadow: inherit;
         }
 
         #waybar {
             background-color: rgba(10, 10, 10, 0.5);
+            border-bottom: 2px;
+            border-color: rgba(255, 132, 0, 0.7);
         }
 
         #workspaces {
@@ -163,30 +172,15 @@
         #workspaces button {
             margin: 1px;
             transition: all .5s ease-out;
-            color: #5e81ac;
-        }
-
-        #workspaces button:hover {
-            background: rgba(94, 129, 172, 0.5);
-            color: #d8dee9;
-            box-shadow: inherit;
-            text-shadow: inherit;
         }
 
         #workspaces button.active {
-            background: rgba(208, 135, 112, 0.5);
-            color: #e5e9f0;
-        }
-
-        #workspaces button.active:hover {
-            background: rgba(208, 135, 112, 1);
-            color: #eceff4;
-            box-shadow: inherit;
-            text-shadow: inherit;
+            background: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
         }
 
         #workspaces button.urgent{
-            color: #bf616a;
+            color: #ffff00;
         }
 
         #language {
@@ -198,38 +192,17 @@
             padding-left: 10px;
             padding-right: 10px;
             margin: 4px 0px;
-            background: rgba(163, 190, 140, 0.5);
-            color: #d8dee9;
-        }
-
-        #keyboard:hover {
-            background: rgba(163, 190, 140, 1);
-            color: #e5e9f0;
-            box-shadow: inherit;
-            text-shadow: inherit;
         }
 
         #pulseaudio {
             transition: all .5s ease-out;
-            background: rgba(180, 142, 173, 0.5);
-            color: #d8dee9;
             margin: 4px 2px;
             padding-left: 10px;
             padding-right: 10px;
         }
 
-        #pulseaudio:hover {
-            background: rgba(180, 142, 173, 1);
-            color: #e5e9f0;
-        }
-
         #pulseaudio.muted {
-            background: rgba(191, 97, 106, 0.5);
-        }
-
-        #pulseaudio.muted:hover {
-            background: rgba(191, 97, 106, 1);
-            color: #e5e9f0;
+            color: #cc0000;
         }
         '';
     };
