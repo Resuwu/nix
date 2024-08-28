@@ -4,19 +4,11 @@
             mainBar = {
                 layer = "top";
                 position = "top";
-                margin = "9 13 -10 18";
+                margin = "0 0 10 0";
 
-                modules-left = [ "hyprland/workspaces" "group/keyboard" "pulseaudio" ];
+                modules-left = [ "hyprland/workspaces" "hyprland/language" "keyboard-state" "pulseaudio" ];
                 modules-center = [ "hyprland/window"  "privacy" ];
                 modules-right = [ "bluetooth" "network" "backlight" "battery" "clock" "tray" "group/group-power" ];
-
-                "group/keyboard" = {
-                    orientation = "inherit";
-                    modules = [
-                        "hyprland/language"
-                        "keyboard-state"
-                    ];
-                };
 
                 "hyprland/language" = {
                     format-en = "EN";
@@ -147,62 +139,50 @@
             border: none;
             font-family: JetBrains Mono Semibold;
             font-size: 20px;
-            min-height: 24px;
-            color: #111111;
-        }
-
-        *:hover {
-            background: rgba(255, 132, 0, 0.7);
-            color: #ffffff;
-            box-shadow: inherit;
-            text-shadow: inherit;
+            min-height: 22px;
+            color: #dddddd;
+            background: transparent;
+            margin: 0px;
+            transition: all .5s ease-out;
         }
 
         #waybar {
             background-color: rgba(10, 10, 10, 0.5);
-            border-bottom: 2px;
-            border-color: rgba(255, 132, 0, 0.7);
+            border-bottom: 2px solid rgba(255, 132, 0, 0.7);
         }
 
-        #workspaces {
-            margin: 3px 1px 3px 3px;
-            background: transparent;
-        }
+        #workspaces {}
 
         #workspaces button {
-            margin: 1px;
-            transition: all .5s ease-out;
+            padding-left: 1px;
+            padding-right: 1px;
         }
 
         #workspaces button.active {
-            background: rgba(0, 0, 0, 0.5);
-            color: #ffffff;
+            background: rgba(255, 132, 0, 0.7);
         }
 
         #workspaces button.urgent{
-            color: #ffff00;
+            color: #61c8ff;
         }
 
         #language {
-            padding-right: 8px;
+            padding-left: 5px;
+            padding-right: 5px;
         }
 
-        #keyboard {
-            transition: all .5s ease-out;
-            padding-left: 10px;
-            padding-right: 10px;
-            margin: 4px 0px;
+        #keyboard-state {
+            padding-left: 5px;
+            padding-right: 5px;
         }
 
         #pulseaudio {
-            transition: all .5s ease-out;
-            margin: 4px 2px;
-            padding-left: 10px;
-            padding-right: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
         }
 
         #pulseaudio.muted {
-            color: #cc0000;
+            color: #d93725;
         }
         '';
     };
