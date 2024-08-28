@@ -45,7 +45,6 @@
         libnotify
         mako
         waybar
-        light
         home-manager
 
         #Screenshots
