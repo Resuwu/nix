@@ -145,13 +145,11 @@
             margin: 0;
             transition: all .5s ease-out;
             border-radius: 0px;
-            padding-left: 10px;
-            padding-right: 10px;
         }
 
         #waybar {
             background-color: rgba(10, 10, 10, 0.5);
-            border-bottom: 3px solid rgba(255, 132, 0, 1);
+            border-bottom: 3px solid #ff8400;
         }
 
         #workspaces {
@@ -165,7 +163,7 @@
         }
 
         #workspaces button.active {
-            background: rgba(255, 132, 0, 1);
+            background: #ff8400;
         }
 
         #workspaces button.urgent{
@@ -173,16 +171,67 @@
         }
 
         #language {
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         #keyboard-state {
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         #pulseaudio {
+            padding-left: 10px;
+            padding-right: 10px;
         }
 
         #pulseaudio.muted {
             color: #d93725;
+        }
+
+        #window {
+            padding-left: 10px;
+            padding-right: 5px;
+        }
+
+        #privacy {
+            padding-left: 5px;
+            padding-right: 10px;
+        }
+
+        #bluetooth {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        #network {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        #backlight {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        #battery {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        #clock {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        #tray {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        #group-power {
+            padding-left: 10px;
+            padding-right: 10px;
         }
         '';
     };
