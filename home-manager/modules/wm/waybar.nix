@@ -8,7 +8,7 @@
 
                 modules-left = [ "hyprland/workspaces" "hyprland/language" "keyboard-state" "pulseaudio" ];
                 modules-center = [ "hyprland/window"  "privacy" ];
-                modules-right = [ "bluetooth" "network" "backlight" "battery" "clock" "tray" "group/group-power" ];
+                modules-right = [ "bluetooth" "network" "backlight" "battery" "clock" "tray" ];
 
                 "hyprland/language" = {
                     format-en = "EN";
@@ -45,10 +45,7 @@
                 };
 
                 "hyprland/window" = {
-                    format = "{class}: {}";
-                    rewrite = {
-                        "(.*) — Mozilla Firefox" = "$1";
-                    };
+                    format = "{class}";
                 };
 
                 "privacy" = {
@@ -65,6 +62,7 @@
 	                tooltip-format-connected = "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}";
 	                tooltip-format-enumerate-connected = "{device_alias}\t{device_address}";
 	                tooltip-format-enumerate-connected-battery = "{device_alias}\t{device_address}\t{device_battery_percentage}%";
+                    on-click = "bluetooth toggle";
                 };
 
                 "network" = {
@@ -100,37 +98,12 @@
                 };
 
                 "clock" = {
-                    format = "{:%H:%M}";
+                    format = "{%I:%M p}";
                 };
 
                 "tray" = {
                     icon-size = 16;
                     spacing = 0;
-                };
-
-                "group/group-power" = {
-                    orientation = "inherit";
-                    drawer = {
-                        transition-duration = 500;
-                        children-class = "not-power";
-                        transition-left-to-right = false;
-                    };
-                    modules = [
-                        "custom/power"
-                        "custom/reboot"
-                    ];
-                };
-
-                "custom/reboot" = {
-                    format = "󰜉";
-                    tooltip = false;
-                    on-click = "reboot";
-                };
-
-                "custom/power" = {
-                    format = "";
-                    tooltip = false;
-                    on-click = "shutdown now";
                 };
             };
         };
@@ -166,7 +139,7 @@
 
         #workspaces button.active {
             background: #a3be8c;
-            color: #111111
+            color: #111111;
         }
 
         #workspaces button.urgent{
@@ -175,11 +148,11 @@
 
         #language {
             padding-left: 12px;
-            padding-right: 4px;
+            padding-right: 3px;
         }
 
         #keyboard-state {
-            padding-left: 4px;
+            padding-left: 3px;
         }
 
         #pulseaudio.muted {
@@ -187,11 +160,11 @@
         }
 
         #window {
-            padding-right: 4px;
+            padding-right: 3px;
         }
 
         #privacy {
-            padding-left: 4px;
+            padding-left: 3px;
         }
 
         #bluetooth {}
@@ -205,8 +178,6 @@
         #clock {}
         
         #tray {}
-        
-        #group-power {}
         '';
     };
 }
