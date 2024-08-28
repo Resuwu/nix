@@ -9,10 +9,6 @@
             #Autostart
             exec-once = "bash ~/nix/home-manager/scripts/start.sh";
 
-            decoration = {
-                rounding = 10;
-            };
-
             #Env variables
             env = [
                 "GDK_BACKEND,wayland,x11"
@@ -46,12 +42,16 @@
             #Appearance
             general = {
                 gaps_in = 3;
-                gaps_out = 10;
+                gaps_out = 7;
                 border_size = 3;
-                "col.active_border" = "rgba(a3be8cf2) rgba(8fbcbbf2) 45deg";
+                "col.active_border" = "rgba(ff8e00b3)";
                 "col.inactive_border" = "rgba(7a7a7acc)";
-
+                no_border_on_floating = true;
                 layout = "dwindle";
+            };
+            
+            decoration = {
+                rounding = 0;
             };
 
             dwindle = {

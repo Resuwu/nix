@@ -4,7 +4,7 @@
             mainBar = {
                 layer = "top";
                 position = "top";
-                margin = "0 0 10 0";
+                margin = "0";
 
                 modules-left = [ "hyprland/workspaces" "hyprland/language" "keyboard-state" "pulseaudio" ];
                 modules-center = [ "hyprland/window"  "privacy" ];
@@ -142,14 +142,14 @@
             min-height: 22px;
             color: #dddddd;
             background: transparent;
-            margin: 0px;
+            margin: 0 0 3px 0;
             transition: all .5s ease-out;
             border-radius: 0px;
         }
 
         #waybar {
             background-color: rgba(10, 10, 10, 0.5);
-            border-bottom: 2px solid rgba(255, 132, 0, 0.7);
+            border-bottom: 3px solid rgba(255, 132, 0, 0.7);
         }
 
         #workspaces {}
