@@ -1,7 +1,7 @@
 { pkgs, ... }: 
 let
     tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
-    theme = ''"border=yellow;text=white;prompt=grey;time=yellow;action=gray;button=yellow;container=black;input=white"'';
+    theme = ''"border=green;text=white;prompt=grey;time=green;action=gray;button=green;container=black;input=white"'';
     hyprland = ''"hyprland &> /dev/null"'';
 in {
     services.greetd = {

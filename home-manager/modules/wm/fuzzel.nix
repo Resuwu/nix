@@ -8,7 +8,7 @@
             };
 
             colors = {
-                border = "a3be8cf2";
+                border = "a3be8cff";
                 background = "1f2226f2";
                 text = "ebcb8bff";
                 match = "81a1c1ff";
@@ -19,7 +19,7 @@
 
             border = {
                 width = 3;
-                radius = 10;
+                radius = 0;
             };
         };
     };

@@ -151,7 +151,7 @@
 
         #waybar {
             background-color: rgba(10, 10, 10, 0.5);
-            border-bottom: 3px solid #ff8400;
+            border-bottom: 3px solid #a3be8c;
         }
 
         #workspaces {
@@ -165,7 +165,8 @@
         }
 
         #workspaces button.active {
-            background: #ff8400;
+            background: #a3be8c;
+            color: #111111
         }
 
         #workspaces button.urgent{
@@ -174,11 +175,12 @@
 
         #language {
             padding-left: 12px;
+            padding-right: 4px;
         }
 
-        #keyboard-state {}
-
-        #pulseaudio {}
+        #keyboard-state {
+            padding-left: 4px;
+        }
 
         #pulseaudio.muted {
             color: #d93725;
