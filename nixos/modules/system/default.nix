@@ -7,6 +7,7 @@
         ./nix-settings.nix
         ./security.nix
         ./sound.nix
+        ./tty.nix
         ./user.nix
         ./virtualisation.nix
     ];
