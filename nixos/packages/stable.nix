@@ -7,7 +7,7 @@
         bitwarden-desktop
         filezilla
         mongodb-compass
-        pgadmin4-desktopmode
+        dbeaver-bin
         postman
 
         #Cli tools
