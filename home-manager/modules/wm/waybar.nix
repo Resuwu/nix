@@ -98,8 +98,8 @@
                 };
 
                 "clock" = {
-                    format = "{%I:%M %p}";
-                    tooltip-format = "{%A %d-%m-%Y}";
+                    format = "{%I:%M} {%p}";
+                    tooltip-format = "{%A} {%d-%m-%Y}";
                 };
 
                 "tray" = {
