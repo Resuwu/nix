@@ -88,7 +88,7 @@
             #Programs
             "$terminal" = "alacritty";
             "$menu" = "fuzzel";
-            "$locker" = "waylock";
+            "$locker" = "swaylock -f";
 
             #Binds
             "$mainMod" = "SUPER";

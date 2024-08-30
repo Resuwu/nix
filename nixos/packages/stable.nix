@@ -48,7 +48,6 @@
         mako
         waybar
         home-manager
-        waylock
 
         #Screenshots
         grim
