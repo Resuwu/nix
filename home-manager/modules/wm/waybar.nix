@@ -66,7 +66,7 @@
                 };
 
                 "network" = {
-                    interface = "wlp2s0";
+                    interface = "wlp58s0";
                     format = "{ifname}";
                     format-wifi = "{essid} ({signalStrength}%) ";
                     format-ethernet = "{ipaddr}/{cidr} 󰊗";
