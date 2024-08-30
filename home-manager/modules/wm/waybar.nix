@@ -98,8 +98,8 @@
                 };
 
                 "clock" = {
-                    format = "{%I:%M} {%p}";
-                    tooltip-format = "{%A} {%d-%m-%Y}";
+                    format = "{:%I:%M :%p}";
+                    tooltip-format = "{:%A :%d-:%m-:%Y}";
                 };
 
                 "tray" = {
@@ -111,7 +111,7 @@
         style = ''
         * {
             border: none;
-            font-family: JetBrains Mono Semibold;
+            font-family: JetBrains Mono;
             font-size: 20px;
             min-height: 22px;
             color: #eeeeee;
