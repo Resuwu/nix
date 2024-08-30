@@ -7,6 +7,7 @@
         bitwarden-desktop
         filezilla
         mongodb-compass
+        pgadmin4-desktopmode
         postman
 
         #Cli tools
@@ -17,6 +18,7 @@
         zip
         unzip
         git
+        lazygit
         cava
         lux
         openssl
