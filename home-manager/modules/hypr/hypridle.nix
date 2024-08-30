@@ -20,7 +20,7 @@
                 }
                 {
                     timeout = 300;
-                    on-timeout = "loginctl lock-session";
+                    on-timeout = "swaylock-fancy -df JetBrains Mono Semibold --daemonize";
                 }
                 {
                     timeout = 330;

@@ -88,7 +88,7 @@
             #Programs
             "$terminal" = "alacritty";
             "$menu" = "fuzzel";
-            "$locker" = "swaylock -f";
+            "$locker" = "swaylock-fancy -df JetBrains Mono Semibold --daemonize";
 
             #Binds
             "$mainMod" = "SUPER";
