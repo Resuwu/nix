@@ -1,7 +1,8 @@
 {
-    programs.fastfetch.settings = {
-        logo = {
-            source = "~/nix/home-manager/imgs/ffimage";
-        }
+    programs.fastfetch = {
+        enable = true;
+        settings = {
+            logo.source = "~/nix/home-manager/imgs/ffimage";
+        };
     };
 }

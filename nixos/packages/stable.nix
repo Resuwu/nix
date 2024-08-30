@@ -19,7 +19,6 @@
         git
         cava
         lux
-        fastfetch
         openssl
         htop
 	    wireguard-tools
