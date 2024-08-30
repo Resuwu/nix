@@ -88,6 +88,7 @@
             #Programs
             "$terminal" = "alacritty";
             "$menu" = "fuzzel";
+            "$locker" = "waylock";
 
             #Binds
             "$mainMod" = "SUPER";
@@ -99,6 +100,7 @@
                 "$mainMod, R, exec, $menu"
                 "$mainMod, P, pseudo, # dwindle"
                 "$mainMod, J, togglesplit, # dwindle"
+                "$mainMod, L, exec, $locker"
 
                 # Screenshooting
                 '', PRINT, exec, grim - | wl-copy && notify-send -e "Screenshot saved to clipboard"''

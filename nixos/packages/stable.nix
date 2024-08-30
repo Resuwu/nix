@@ -7,7 +7,6 @@
         bitwarden-desktop
         filezilla
         mongodb-compass
-        pgadmin4
         postman
 
         #Cli tools
@@ -38,7 +37,6 @@
 
         #Hypr
         hyprland
-        hyprlock
         hypridle
         xdg-desktop-portal-hyprland
 
@@ -49,6 +47,7 @@
         mako
         waybar
         home-manager
+        waylock
 
         #Screenshots
         grim

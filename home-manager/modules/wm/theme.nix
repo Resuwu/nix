@@ -2,12 +2,8 @@
 	gtk = {
 		enable = true;
 		theme = {
-			package = (pkgs.catppuccin-gtk.override {
-      			accents = [ "green" ];
-      			size = "standard";
-      			variant = "mocha";
-    		});
-			name = "catppuccin-mocha-green-standard";
+			package = pkgs.nordic;
+			name = "Nordic";
 		};
 	};
 	

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 swww-daemon &
-swww img ~/nix/home-manager/wallpapers/wallpaper.jpg &
+swww img ~/nix/home-manager/imgs/wallpaper.jpg &
 
 waybar &
 
