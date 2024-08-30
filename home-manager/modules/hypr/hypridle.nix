@@ -20,7 +20,7 @@
                 }
                 {
                     timeout = 300;
-                    on-timeout = "swaylock-fancy -df JetBrains Mono Semibold --daemonize";
+                    on-timeout = "swaylock-fancy -df jetbrains--mono --daemonize";
                 }
                 {
                     timeout = 330;
