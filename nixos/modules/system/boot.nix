@@ -13,9 +13,11 @@
 
         plymouth = {
             enable = true;
-            theme = "catppuccin-mocha";
+            theme = "angular_alt";
             themePackages = with pkgs; [
-                (catppuccin-plymouth.override { variant = "mocha"; })
+                (adi1090x-plymouth-themes.override {
+                    selected_themes = [ "angular_alt" ];
+                })
             ];
         };
 
