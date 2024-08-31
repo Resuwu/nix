@@ -24,6 +24,7 @@
         openssl
         htop
 	    wireguard-tools
+	( callPackage ./custom/spoofdpi {} )
         brightnessctl
 
         #Spellcheck
