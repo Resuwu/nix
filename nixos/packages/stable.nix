@@ -26,6 +26,7 @@
         wireguard-tools
         ( callPackage ./custom/spoofdpi {} )
         brightnessctl
+        putty
 
         #Spellcheck
         hunspell
