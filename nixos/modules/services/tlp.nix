@@ -11,10 +11,10 @@
             CPU_MIN_PERF_ON_AC = 0;
             CPU_MAX_PERF_ON_AC = 90;
             CPU_MIN_PERF_ON_BAT = 0;
-            CPU_MAX_PERF_ON_BAT = 25;
+            CPU_MAX_PERF_ON_BAT = 65;
 
-            START_CHARGE_THRESH_BAT0 = 40;
-            STOP_CHARGE_THRESH_BAT0 = 80;
+            START_CHARGE_THRESH_BAT0 = 0;
+            STOP_CHARGE_THRESH_BAT0 = 1;
         };
     };
 }
