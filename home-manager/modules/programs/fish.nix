@@ -3,7 +3,7 @@
         enable = true;
 
         interactiveShellInit = ''
-            set fish_greeting
+            set fish_greeting "fortune | neo-cowsay"
             set theme_color_scheme nord
             set theme_display_user yes
             set theme_newline_cursor yes

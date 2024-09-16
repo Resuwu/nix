@@ -6,9 +6,9 @@
                 position = "top";
                 margin = "0";
 
-                modules-left = [ "hyprland/workspaces" "hyprland/language" "keyboard-state" "pulseaudio" ];
+                modules-left = [ "hyprland/workspaces" "hyprland/language" "keyboard-state" "custom/splitter" "pulseaudio" ];
                 modules-center = [ "hyprland/window"  "privacy" ];
-                modules-right = [ "bluetooth" "network" "backlight" "battery" "clock" "tray" ];
+                modules-right = [ "bluetooth" "custom/splitter" "network" "custom/splitter" "backlight" "custom/splitter" "battery" "custom/splitter" "clock" "tray" ];
 
                 "hyprland/language" = {
                     format-en = "EN";
@@ -46,6 +46,10 @@
 
                 "hyprland/window" = {
                     format = "{class}";
+                };
+
+                "custom/splitter" = {
+                    format = "|";
                 };
 
                 "privacy" = {
@@ -126,6 +130,11 @@
         #waybar {
             background-color: rgba(10, 10, 10, 0.5);
             border-bottom: 3px solid #a3be8c;
+        }
+
+        #splitter {
+            padding-left: 2px;
+            padding-right: 2px;
         }
 
         #workspaces {

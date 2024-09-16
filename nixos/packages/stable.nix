@@ -7,8 +7,8 @@
         bitwarden-desktop
         filezilla
         mongodb-compass
-        dbeaver-bin
         postman
+        pgmanage
 
         #Cli tools
         vim
@@ -27,6 +27,10 @@
         ( callPackage ./custom/spoofdpi {} )
         brightnessctl
         putty
+
+        #Fun
+        neo-cowsay
+        fortune
 
         #Spellcheck
         hunspell
