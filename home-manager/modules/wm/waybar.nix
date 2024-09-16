@@ -60,6 +60,7 @@
 
                 "bluetooth" = {
                     format = " {status}";
+                    format-disabled = " off";
 	                format-connected = " {device_alias}";
 	                format-connected-battery = " {device_alias} {device_battery_percentage}%";
 	                tooltip-format = "{controller_alias}\t{controller_address}\n\n{num_connections} connected";
