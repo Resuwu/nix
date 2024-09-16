@@ -135,6 +135,7 @@
         #splitter {
             padding-left: 2px;
             padding-right: 2px;
+            color: #5e81ac;
         }
 
         #workspaces {
