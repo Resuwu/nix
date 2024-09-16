@@ -28,6 +28,10 @@
         brightnessctl
         putty
 
+        #Fun
+        neo-cowsay
+        fortune
+
         #Spellcheck
         hunspell
         hunspellDicts.en_US
