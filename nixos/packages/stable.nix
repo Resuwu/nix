@@ -8,7 +8,7 @@
         filezilla
         mongodb-compass
         postman
-        pgmanage
+        pgadmin4-desktopmode
 
         #Cli tools
         vim
