@@ -7,8 +7,8 @@
         bitwarden-desktop
         filezilla
         mongodb-compass
-        dbeaver-bin
         postman
+        pgmanage
 
         #Cli tools
         vim
