@@ -1,5 +1,5 @@
-{
-    services.mako = {
+{ services.mako = {
+        enable = true;
         backgroundColor = "#0a0a0a80";
         borderColor = "#00000099";
         borderSize = 3;
