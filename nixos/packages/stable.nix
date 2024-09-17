@@ -31,6 +31,7 @@
         #Fun
         neo-cowsay
         fortune
+	lolcat
 
         #Spellcheck
         hunspell
