@@ -5,8 +5,8 @@
         spotify
         telegram-desktop
         webcord
-        libreoffice-qt6-fresh
-        obsidian
+	wpsoffice
+	obsidian
         jetbrains.idea-community
         ( qt6.callPackage ./custom/pobfrontend {} )
     ];

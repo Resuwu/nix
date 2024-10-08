@@ -23,6 +23,7 @@
 
 	        windowrule = [
 		        "tile, ^(pobfrontend)$"
+			"tile, ^(xfreerdp)$"
 	        ];
 
             #Input
