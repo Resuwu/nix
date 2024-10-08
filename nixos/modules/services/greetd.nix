@@ -12,5 +12,6 @@ in {
                 user = "greeter";
             };
         };
+        vt = 2;
     };
 }
