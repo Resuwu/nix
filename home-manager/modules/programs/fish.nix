@@ -20,8 +20,10 @@
 
 	    sht = "shutdown now";
 
-        cls = "clear";
-        ff = "fastfetch";
+            cls = "clear";
+            ff = "fastfetch";
+	    spoof = "spoofdpi -port 8081";
+	    work-rdp = "~/.rdp/work-rdp.sh";
 	};
 
         plugins = [

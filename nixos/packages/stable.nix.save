@@ -32,7 +32,7 @@
         #Fun
         neo-cowsay
         fortune
-        lolcat
+	lolcat
 
 	#Programming
 	gradle_7
@@ -60,7 +60,6 @@
         mako
         waybar
         home-manager
-        xfce.thunar
 
         #Screenshots
         grim
