@@ -31,7 +31,7 @@
         #Fun
         neo-cowsay
         fortune
-	lolcat
+        lolcat
 
         #Spellcheck
         hunspell
@@ -55,6 +55,7 @@
         mako
         waybar
         home-manager
+        xfce.thunar
 
         #Screenshots
         grim
