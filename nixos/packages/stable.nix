@@ -37,6 +37,7 @@
 	    #Programming
 	    gradle_7
 	    jdk17
+        alejandra
 
         #Spellcheck
         hunspell
