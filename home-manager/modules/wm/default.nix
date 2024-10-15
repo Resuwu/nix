@@ -4,6 +4,5 @@
         ./swaylock.nix
         ./theme.nix
         ./waybar.nix
-        ./xdg.nix
     ];
 }

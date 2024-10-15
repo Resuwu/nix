@@ -10,5 +10,6 @@
         ./tty.nix
         ./user.nix
         ./virtualisation.nix
+        ./xdg.nix
     ];
 }

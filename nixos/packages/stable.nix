@@ -34,9 +34,9 @@
         fortune
         lolcat
 
-	#Programming
-	gradle_7
-	jdk17
+	    #Programming
+	    gradle_7
+	    jdk17
 
         #Spellcheck
         hunspell
