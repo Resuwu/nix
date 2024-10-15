@@ -1,6 +1,7 @@
-{ imports = [
-        ./fonts.nix
-        ./stable.nix
-        ./unstable.nix
-    ];
+{
+  imports = [
+    ./fonts.nix
+    ./stable.nix
+    ./unstable.nix
+  ];
 }

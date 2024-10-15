@@ -1,6 +1,7 @@
-{ imports = [
-        ./hypr
-        ./programs
-        ./wm
-    ];
+{
+  imports = [
+    ./hypr
+    ./programs
+    ./wm
+  ];
 }

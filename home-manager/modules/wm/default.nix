@@ -1,8 +1,9 @@
-{ imports = [
-        ./fuzzel.nix
-        ./mako.nix
-        ./swaylock.nix
-        ./theme.nix
-        ./waybar.nix
-    ];
+{
+  imports = [
+    ./fuzzel.nix
+    ./mako.nix
+    ./swaylock.nix
+    ./theme.nix
+    ./waybar.nix
+  ];
 }

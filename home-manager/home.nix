@@ -1,7 +1,8 @@
-{ imports = [
+{
+  imports = [
     ./modules
   ];
-  
+
   home = {
     username = "resu";
     homeDirectory = "/home/resu";

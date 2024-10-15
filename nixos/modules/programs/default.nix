@@ -1,5 +1,6 @@
-{ imports = [
-        ./fish.nix
-        ./hyprland.nix
-    ];
+{
+  imports = [
+    ./fish.nix
+    ./hyprland.nix
+  ];
 }

@@ -4,37 +4,35 @@
   fetchurl,
   glibc,
   go,
-}:
-
-let
+}: let
   platform = "linux-amd64";
 in
-stdenv.mkDerivation rec {
-  pname = "spoofdpi";
-  version = "0.11.1";
+  stdenv.mkDerivation rec {
+    pname = "spoofdpi";
+    version = "0.11.1";
 
-  src = fetchurl {
-    url = "https://github.com/xvzc/SpoofDPI/releases/download/v${version}/spoofdpi-${platform}.tar.gz";
-    hash = "sha256-QjlarYdES+ifU61lj/DD0dOOj5OVkiiNmbV7IT/wiqg=";
-  };
+    src = fetchurl {
+      url = "https://github.com/xvzc/SpoofDPI/releases/download/v${version}/spoofdpi-${platform}.tar.gz";
+      hash = "sha256-QjlarYdES+ifU61lj/DD0dOOj5OVkiiNmbV7IT/wiqg=";
+    };
 
-  sourceRoot = ".";
+    sourceRoot = ".";
 
-  dontBuild = true;
-  dontConfigure = true;
+    dontBuild = true;
+    dontConfigure = true;
 
-  installPhase = ''
-    runHook preInstall
-    mkdir -p $out/bin
-    cp spoofdpi $out/bin
-    runHook postInstall
-  '';
+    installPhase = ''
+      runHook preInstall
+      mkdir -p $out/bin
+      cp spoofdpi $out/bin
+      runHook postInstall
+    '';
 
-  meta = with lib; {
-    description = "A simple and fast software designed to bypass Deep Packet Inspection.";
-    homepage = "https://github.com/xvzc/SpoofDPI";
-    license = licenses.asl20;
-    platforms = platforms.linux;
-    mainProgram = "spoofdpi";
-  };
-}
+    meta = with lib; {
+      description = "A simple and fast software designed to bypass Deep Packet Inspection.";
+      homepage = "https://github.com/xvzc/SpoofDPI";
+      license = licenses.asl20;
+      platforms = platforms.linux;
+      mainProgram = "spoofdpi";
+    };
+  }

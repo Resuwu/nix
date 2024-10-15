@@ -1,4 +1,5 @@
-{ imports = [
-        ./disable-turbo-boost.nix
-    ];
+{
+  imports = [
+    ./disable-turbo-boost.nix
+  ];
 }
