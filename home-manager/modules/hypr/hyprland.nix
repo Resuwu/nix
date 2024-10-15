@@ -15,9 +15,13 @@
                 "XDG_CURRENT_DESKTOP,Hyprland"
                 "XDG_SESSION_TYPE,wayland"
                 "XDG_SESSION_DESKTOP,Hyprland"
+                "XDG_CONFIG_HOME,$HOME/.config"
+                "XDG_DATA_HOME,$HOME/.local/share"
+                "XDG_STATE_HOME,$HOME/.local/state"
+                "XDG_CACHE_HOME,$HOME/.cache"
                 "QT_QPA_PLATFORM,wayland;xcb"
                 "QT_WAYLAND_DISABLE_DECORATION,1"
-		        "QT_ENABLE_HIGHDPI_SCALING,1"
+                "QT_ENABLE_HIGHDPI_SCALING,1"
                 "MOZ_ENABLE_WAYLAND,1"
             ];
 

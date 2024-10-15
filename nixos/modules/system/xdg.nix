@@ -3,7 +3,7 @@
         mime = {
             enable = true;
             defaultApplications = {
-                "FileManager" = [ "thunar.desktop" ];
+                "inode/directory" = [ "thunar.desktop" ];
             };
         };
     };
