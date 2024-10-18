@@ -9,6 +9,7 @@
     mongodb-compass
     postman
     pgadmin4-desktopmode
+    ventoy
 
     #Cli tools
     vim
@@ -28,6 +29,7 @@
     brightnessctl
     putty
     freerdp
+    cbonsai
 
     #Fun
     neo-cowsay
@@ -51,6 +53,8 @@
 
     #Network
     shadowsocks-rust
+    nmap
+    xray
 
     #Hypr
     hyprland

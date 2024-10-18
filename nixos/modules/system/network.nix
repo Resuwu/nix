@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   networking = {
     hostName = "resu-laptop";
     networkmanager = {
