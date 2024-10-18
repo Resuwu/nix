@@ -27,6 +27,8 @@
       ff = "fastfetch";
       spoof = "spoofdpi -port 8081";
       work-rdp = "~/.rdp/work-rdp.sh";
+      vpn-up = "systemctl start openvpn-myvpn.service";
+      vpn-down = "systemctl stop openvpn-myvpn.service ";
     };
 
     plugins = [

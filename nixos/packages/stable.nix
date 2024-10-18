@@ -54,7 +54,6 @@
     #Network
     shadowsocks-rust
     nmap
-    xray
 
     #Hypr
     hyprland
