@@ -1,7 +1,7 @@
 {pkgs, ...}: let
   configPath = "$HOME/.config/shadowsocks/config.json";
 in {
-  systemd.user.services = {
+  systemd.services = {
     shadowsocks-proxy = {
       Unit = {
         Description = "Local Shadowsocks proxy";
