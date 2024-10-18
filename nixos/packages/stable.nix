@@ -28,7 +28,6 @@
     brightnessctl
     putty
     freerdp
-    toybox
 
     #Fun
     neo-cowsay
