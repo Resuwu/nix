@@ -28,6 +28,7 @@
     brightnessctl
     putty
     freerdp
+    toybox
 
     #Fun
     neo-cowsay
@@ -48,6 +49,9 @@
     bluez
     bluez-tools
     bluez-alsa
+
+    #Network
+    shadowsocks-rust
 
     #Hypr
     hyprland
