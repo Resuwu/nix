@@ -39,6 +39,7 @@
     #Programming
     gradle_7
     jdk17
+    jdk23
     alejandra
 
     #Spellcheck
