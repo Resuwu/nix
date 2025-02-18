@@ -9,5 +9,6 @@
     obsidian
     jetbrains.idea-community
     (qt6.callPackage ./custom/pobfrontend {})
+    jdk23
   ];
 }
