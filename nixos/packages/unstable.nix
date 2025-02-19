@@ -4,8 +4,8 @@
     anilibria-winmaclinux
     spotify
     telegram-desktop
-    webcord
     wpsoffice
+    webcord
     obsidian
     jetbrains.idea-community
     (qt6.callPackage ./custom/pobfrontend {})
