@@ -1,7 +1,7 @@
 {pkgs, ...}: let
   tuigreet = "${pkgs.greetd.tuigreet}/bin/tuigreet";
   theme = ''"border=green;text=white;prompt=grey;time=green;action=gray;button=green;container=black;input=white"'';
-  hyprland = ''"hyprland &> /dev/null"'';
+  hyprland = ''"Hyprland &> /dev/null"'';
 in {
   services.greetd = {
     enable = true;
